@@ -5,7 +5,7 @@ FROM python:3.8-slim
 WORKDIR /santhosh_docker_demo
 
 # Copying necessory file into container
-COPY . /santhosh_docker_demo
+COPY requirements.txt . 
 
 # Upgrade pip and install python depencies
 RUN pip3 install --upgrade pip && pip install --no-cache-dir -r requirements.txt
