@@ -5,7 +5,7 @@ WORKDIR /santhosh_docker_demo
 #Copying necessory file into container
 COPY . /santhosh_docker_demo
 
-RUN pip3 install -- upgrade pil and pip install
+RUN pip3 install- --no-cache-dir -r requirements.txt
 
 #Expose port 5000 for the application
 EXPOSE 5000
